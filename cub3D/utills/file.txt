@@ -1,0 +1,19 @@
+
+class Player {
+
+	constructor(){
+		this.x = WINDOW_WIDH / 2;
+		this.y = WINDOW_HEIGHT / 2;
+		this.radius = 3;
+		this.turnDierection = 0; // -1 if left, +1 if right
+		this.wlakDierection = 0; // -1 if back, +1 if front
+		this.rotationAngle = Math.PI / 2;
+		this.moveSpeed = 2.0;
+		this.rotationSpeed = 2 * (Math.PI / 180);
+	}
+	render(){
+
+		fill("red");
+		circle(this.x, this.y, this.radius);
+	}
+}
