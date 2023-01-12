@@ -6,7 +6,7 @@
 /*   By: mabdelba <mabdelba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 18:27:20 by mabdelba          #+#    #+#             */
-/*   Updated: 2023/01/09 19:53:39 by mabdelba         ###   ########.fr       */
+/*   Updated: 2023/01/12 02:25:28 by mabdelba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,11 @@ int main(int ac, char **av)
 
 	printf("x of player: %d\n", map.x);
 	printf("y of player: %d\n", map.y);
+	printf("direction of player: %c\n", map.dir);
+
+
+	
+	printf("\ncolor in hexa: %d\n", convert_color(data.f));
 
 	
 	// system("leaks cub3D");

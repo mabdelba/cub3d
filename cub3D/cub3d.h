@@ -6,7 +6,7 @@
 /*   By: mabdelba <mabdelba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 18:29:08 by mabdelba          #+#    #+#             */
-/*   Updated: 2023/01/09 19:30:17 by mabdelba         ###   ########.fr       */
+/*   Updated: 2023/01/12 02:16:50 by mabdelba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ typedef	struct s_map
 	char	**matrice;
 	int		x;
 	int		y;
+	char	dir;
 }				t_map;
 
 typedef struct s_data
@@ -58,5 +59,6 @@ void	error_function(char *str);
 s_size	ft_textsize(int fd);
 bool	check_extension(char *str, char *ext);
 void	check_map(t_map *map);
+int		convert_color(char *str);
 
 #endif
